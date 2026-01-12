@@ -1,7 +1,7 @@
 {
   "schema_version": "1.4.0",
   "id": "GHSA-m494-w24q-6f7w",
-  "modified": "2025-11-24T17:38:55Z",
+  "modified": "2025-11-24T17:38:57Z",
   "published": "2025-10-14T18:30:35Z",
   "aliases": [
     "CVE-2025-59250"
@@ -15,25 +15,6 @@
     }
   ],
   "affected": [
-    {
-      "package": {
-        "ecosystem": "Maven",
-        "name": "com.microsoft.sqlserver:mssql-jdbc"
-      },
-      "ranges": [
-        {
-          "type": "ECOSYSTEM",
-          "events": [
-            {
-              "introduced": "8.3.0.jre11-preview"
-            },
-            {
-              "fixed": "10.2.4.jre11"
-            }
-          ]
-        }
-      ]
-    },
     {
       "package": {
         "ecosystem": "Maven",
@@ -66,11 +47,14 @@
               "introduced": "12.2.0.jre11"
             },
             {
-              "fixed": "12.2.1.jre11"
+              "fixed": "12.2.1.jre11, 12.2.1"
             }
           ]
         }
-      ]
+      ],
+      "database_specific": {
+        "last_known_affected_version_range": "< 12.2.1.jre11"
+      }
     },
     {
       "package": {
@@ -143,6 +127,25 @@
             },
             {
               "fixed": "13.2.1.jre11"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "package": {
+        "ecosystem": "Maven",
+        "name": "com.microsoft.sqlserver:mssql-jdbc"
+      },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "8.3.0.jre11-preview"
+            },
+            {
+              "fixed": "10.2.4.jre11"
             }
           ]
         }
